@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crochet Jewelry Course | Turn $6 of Yarn Into $40–$120 Pieces</title>
+<meta name="description" content="Learn to make and sell crochet earrings, necklaces, bracelets and rings from home. 40+ designs, step-by-step video lessons, PDF charts and a Price & Profit Calculator. One-time payment of $27.">
+<meta property="og:title" content="Crochet Jewelry Course | A crochet business that earns $40 to $120 per piece">
+<meta property="og:description" content="40+ designs · video lessons · PDF charts · Price & Profit Calculator. Your first piece pays for the course.">
+<meta property="og:image" content="img/cf753642f_ChatGPTImage22desetde202619_54_49.webp">
+<meta property="og:type" content="website">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#2A211D">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/cf753642f_ChatGPTImage22desetde202619_54_49.webp" fetchpriority="high">
+
+<script>
+  // ===== CONFIG — lo único que hay que tocar =====
+  window.CONFIG = {
+    checkout: "https://crochett.impultienda.ar/checkout/opcion-1",            // ← URL del checkout. Vacía = los CTA bajan al bloque de precio
+    pixel: "",               // ← ID del Pixel de Meta. Vacío = no carga fbevents
+    support: "support@example.com",
+    price: 27,
+    timerMinutes: 15         // contador "el precio sube cuando llega a cero"
+  };
+</script>
+
+<style>
+  :root{
+    --ivory:#FAF5EE; --cream:#F4EAE0; --paper:#FFFDFA; --sand:#EADFD2;
+    --ink:#2A211D; --ink-2:#4A3D37; --muted:#7B6D65; --muted-2:#A3948B;
+    --clay:#B9533F; --clay-deep:#8F3D2E; --clay-soft:#F3DCD4;
+    --gold:#D4A64F; --gold-soft:#F6E8C8;
+    --sage:#5E6B52; --sage-deep:#4A553F; --sage-soft:#E7EBDF;
+    --green:#1F9D55; --red:#D64545; --red-soft:#FDE8E8;
+    --night:#1C1715; --night-2:#2A2320;
+    --cta:#E8552B; --cta-deep:#C73F18;
+    --radius:22px; --radius-sm:14px;
+    --shadow:0 10px 30px rgba(42,33,29,.10); --shadow-lg:0 24px 60px rgba(42,33,29,.18);
+    --font-body:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif;
+    --font-display:"Fraunces","Georgia",serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{font-family:var(--font-body);color:var(--ink);background:var(--ivory);line-height:1.6;overflow-x:hidden}
+  img,video{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+  button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+  h1,h2,h3{font-family:var(--font-display);font-weight:800;line-height:1.12;letter-spacing:-.01em}
+  h1{font-size:clamp(2rem,5.2vw,3.4rem)}
+  h2{font-size:clamp(1.65rem,3.6vw,2.5rem)}
+  h3{font-size:1.1rem;font-family:var(--font-body);font-weight:700}
+  .accent{color:var(--clay)}
+  .gold{color:var(--gold)}
+  .wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+  .narrow{width:min(760px,100% - 40px);margin-inline:auto}
+  section{padding:72px 0;content-visibility:auto;contain-intrinsic-size:auto 700px}
+  @media(min-width:900px){section{padding:96px 0}}
+  .center{text-align:center}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;background:var(--clay);color:#fff}
+  .eyebrow.soft{background:var(--clay-soft);color:var(--clay-deep)}
+  .eyebrow.night{background:rgba(212,166,79,.14);color:var(--gold)}
+  .lead{font-size:1.05rem;color:var(--muted);max-width:640px;margin:14px auto 0}
+  .section-head{text-align:center;margin-bottom:44px}
+  .section-head h2{margin-top:16px}
+
+  /* ---------- top bar ---------- */
+  .topbar{background:var(--night);color:#F6EEE4;font-size:.8rem;font-weight:600;text-align:center;padding:10px 16px;letter-spacing:.02em;position:relative;z-index:30}
+  .topbar b{color:var(--gold)}
+  .topbar .t{display:inline-block;min-width:3.6em;font-variant-numeric:tabular-nums;background:rgba(255,255,255,.08);padding:2px 8px;border-radius:6px;margin-left:6px}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;background:radial-gradient(1200px 600px at 85% 0%,#F7E7DB 0%,var(--ivory) 55%);padding:0;content-visibility:visible;contain-intrinsic-size:unset}
+  .hero-grid{display:grid;gap:28px;align-items:center}
+  .hero-media{position:relative;margin:0 -20px}
+  .hero-media img{width:100%;height:440px;object-fit:cover;object-position:72% 35%}
+  .hero-media::after{content:"";position:absolute;inset:auto 0 0 0;height:140px;background:linear-gradient(transparent,var(--ivory))}
+  .hero-copy{position:relative;z-index:2;padding:0 0 56px;margin-top:-56px;text-align:center}
+  .hero-copy p.sub{margin:18px auto 0;color:var(--ink-2);font-size:1.02rem;max-width:560px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:22px 0 26px}
+  .chip{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border-radius:999px;font-size:.78rem;font-weight:600;background:#fff;border:1px solid var(--sand);color:var(--ink-2);box-shadow:0 2px 6px rgba(42,33,29,.05)}
+  .float{position:absolute;z-index:3;background:rgba(255,253,250,.94);backdrop-filter:blur(6px);border:1px solid var(--sand);border-radius:16px;padding:10px 14px;box-shadow:var(--shadow);font-size:.78rem;font-weight:600;line-height:1.3}
+  .float strong{display:block;font-family:var(--font-display);font-size:1.25rem;color:var(--clay);line-height:1}
+  .float{display:none}
+  @media(min-width:900px){
+    .hero-grid{grid-template-columns:1.05fr .95fr;gap:48px;min-height:640px}
+    .hero-media{margin:0;order:2;height:100%}
+    .hero-media img{height:640px;border-radius:0 0 0 var(--radius);object-position:60% 30%}
+    .hero-media::after{background:linear-gradient(90deg,var(--ivory),transparent 30%)}
+    .hero-copy{text-align:left;margin:0;padding:64px 0}
+    .hero-copy p.sub{margin-left:0}
+    .chips{justify-content:flex-start}
+    .float{display:block}
+    .float.a{left:-24px;bottom:40px}
+    .float.b{right:-10px;bottom:40px}
+  }
+
+  /* ---------- CTA ---------- */
+  .cta{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;max-width:440px;min-height:62px;padding:16px 26px;border-radius:18px;background:linear-gradient(180deg,var(--cta),var(--cta-deep));color:#fff;font-weight:800;font-size:1.02rem;letter-spacing:.03em;text-transform:uppercase;box-shadow:0 12px 28px rgba(232,85,43,.35),inset 0 1px 0 rgba(255,255,255,.25);transition:transform .15s,box-shadow .15s;animation:pulse 2.4s cubic-bezier(.4,0,.6,1) infinite;position:relative}
+  .cta:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(232,85,43,.42)}
+  .cta:active{transform:scale(.98)}
+  .cta small{display:block;font-size:.68rem;font-weight:600;letter-spacing:.04em;opacity:.9;text-transform:none}
+  .cta>span:first-child{text-align:center}
+  @media(max-width:420px){.cta{font-size:.95rem;padding:14px 18px;letter-spacing:.02em}}
+  .cta .arrow{transition:transform .2s}
+  .cta:hover .arrow{transform:translateX(4px)}
+  @keyframes pulse{0%,100%{box-shadow:0 12px 28px rgba(232,85,43,.35),0 0 0 0 rgba(232,85,43,.45)}50%{box-shadow:0 12px 28px rgba(232,85,43,.35),0 0 0 14px rgba(232,85,43,0)}}
+  .cta-wrap{display:flex;flex-direction:column;align-items:center;gap:14px}
+  @media(min-width:900px){.hero .cta-wrap{align-items:flex-start}}
+  .trust{display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:center;font-size:.78rem;font-weight:600;color:var(--sage-deep)}
+  .trust span{display:inline-flex;align-items:center;gap:6px}
+  .trust svg{width:16px;height:16px}
+
+  /* ---------- proof strip ---------- */
+  .strip{background:var(--night);color:#F6EEE4;padding:22px 0;content-visibility:visible}
+  .strip .wrap{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;text-align:center}
+  .strip b{display:block;font-family:var(--font-display);font-size:1.6rem;color:var(--gold);line-height:1.1}
+  .strip span{font-size:.76rem;color:#C9BDB3}
+  @media(min-width:700px){.strip .wrap{grid-template-columns:repeat(4,1fr)}}
+
+  /* ---------- gallery ---------- */
+  .gallery{background:var(--night-2);color:#F6EEE4;overflow:hidden}
+  .gallery .lead{color:#C9BDB3}
+  .row{display:flex;gap:16px;width:max-content;margin-top:18px}
+  .row.r1{animation:marquee 46s linear infinite}
+  .row.r2{animation:marquee 46s linear infinite reverse}
+  .gallery:hover .row{animation-play-state:paused}
+  .tile{position:relative;width:250px;height:190px;border-radius:18px;overflow:hidden;flex:0 0 auto;box-shadow:0 10px 24px rgba(0,0,0,.35);transition:transform .3s}
+  .tile:hover{transform:translateY(-4px) scale(1.02)}
+  .tile img{width:100%;height:100%;object-fit:cover}
+  .tile span{position:absolute;left:0;right:0;bottom:0;padding:26px 12px 10px;font-size:.78rem;font-weight:600;background:linear-gradient(transparent,rgba(0,0,0,.72))}
+  .tile i{position:absolute;top:10px;right:10px;font-style:normal;font-size:.66rem;font-weight:700;letter-spacing:.08em;padding:4px 8px;border-radius:999px;background:rgba(212,166,79,.92);color:var(--night)}
+  @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(calc(-50% - 8px))}}
+  .fade-l,.fade-r{position:absolute;top:0;bottom:0;width:80px;pointer-events:none;z-index:2}
+  .fade-l{left:0;background:linear-gradient(90deg,var(--night-2),transparent)}
+  .fade-r{right:0;background:linear-gradient(270deg,var(--night-2),transparent)}
+  .gallery-rows{position:relative}
+
+  /* ---------- for you ---------- */
+  .foryou-grid{display:grid;gap:14px}
+  .foryou{display:flex;gap:14px;align-items:flex-start;background:var(--paper);border:1px solid var(--sand);border-radius:var(--radius-sm);padding:18px 20px;box-shadow:0 4px 14px rgba(42,33,29,.05);transition:transform .25s,box-shadow .25s}
+  .foryou:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+  .foryou .n{flex:0 0 38px;height:38px;border-radius:12px;display:grid;place-items:center;background:var(--clay-soft);color:var(--clay-deep);font-family:var(--font-display);font-weight:800;font-size:1.05rem}
+  .foryou p{color:var(--ink-2);font-size:.96rem}
+  .foryou p b{color:var(--ink)}
+  @media(min-width:800px){.foryou-grid{grid-template-columns:1fr 1fr}.foryou-grid .foryou:last-child{grid-column:1/-1}}
+
+  /* ---------- before / after ---------- */
+  .ba{background:var(--cream);position:relative}
+  .ba::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle,rgba(185,83,63,.16) 1px,transparent 1px);background-size:22px 22px;opacity:.6;pointer-events:none}
+  .ba .wrap{position:relative}
+  .cols{display:grid;gap:20px}
+  @media(min-width:800px){.cols{grid-template-columns:1fr 1fr}}
+  .col{border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+  .col.bad{background:#fff;border:1px solid var(--sand)}
+  .col.good{background:var(--sage);color:#fff}
+  .col h3{display:flex;align-items:center;gap:12px;font-size:1.15rem;margin-bottom:18px}
+  .col h3 i{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-style:normal;flex:0 0 auto}
+  .col.bad h3 i{background:var(--red-soft);color:var(--red)}
+  .col.good h3 i{background:rgba(255,255,255,.18);color:#fff}
+  .col ul{list-style:none;display:grid;gap:14px}
+  .col li{display:flex;gap:12px;align-items:flex-start;font-size:.96rem}
+  .col li i{flex:0 0 24px;height:24px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:.8rem;margin-top:2px}
+  .col.bad li i{background:var(--red-soft);color:var(--red)}
+  .col.good li i{background:rgba(255,255,255,.18);color:#fff}
+  .col.bad li{color:var(--ink-2)}
+  .col.good li{color:rgba(255,255,255,.94)}
+
+  /* ---------- math ---------- */
+  .receipt{background:var(--paper);border:2px dashed rgba(185,83,63,.45);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-lg);position:relative}
+  .receipt::before{content:"RECEIPT";position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:var(--ivory);padding:0 10px;font-size:.66rem;font-weight:800;letter-spacing:.2em;color:var(--clay)}
+  .line{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--sand);font-size:.96rem}
+  .line span:first-child{color:var(--muted)}
+  .line b{font-weight:700;white-space:nowrap;flex:0 0 auto}
+  .line.total{border:0;padding-top:16px;font-size:1.05rem}
+  .line.total span:first-child{white-space:nowrap}
+  .line.total b{font-family:var(--font-display);font-size:clamp(1.35rem,5vw,1.9rem);color:var(--green)}
+  .stitch{height:2px;margin:12px 0;background:repeating-linear-gradient(90deg,var(--clay) 0 12px,transparent 12px 24px)}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
+  .stat{background:#fff;border:1px solid var(--sand);border-radius:var(--radius-sm);padding:18px 10px;text-align:center}
+  .stat b{display:block;font-family:var(--font-display);font-size:1.55rem;color:var(--clay);line-height:1}
+  .stat span{display:block;font-size:.74rem;color:var(--muted);margin-top:6px}
+  .why{display:grid;gap:14px;margin-top:34px}
+  @media(min-width:800px){.why{grid-template-columns:repeat(3,1fr)}}
+  .why div{background:var(--paper);border:1px solid var(--sand);border-radius:var(--radius-sm);padding:20px}
+  .why div i{font-style:normal;font-size:1.5rem;display:block;margin-bottom:8px}
+  .why h3{font-size:1rem;margin-bottom:6px}
+  .why p{font-size:.88rem;color:var(--muted)}
+  .fine{font-size:.74rem;color:var(--muted-2);text-align:center;max-width:520px;margin:22px auto 0}
+
+  /* ---------- inside ---------- */
+  .modules{display:grid;gap:14px}
+  @media(min-width:800px){.modules{grid-template-columns:1fr 1fr}}
+  .mod{background:var(--paper);border:1px solid var(--sand);border-radius:var(--radius-sm);padding:20px 22px;display:flex;gap:16px;transition:transform .25s,box-shadow .25s}
+  .mod:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+  .mod .k{flex:0 0 52px;height:52px;border-radius:14px;background:linear-gradient(135deg,var(--clay),var(--clay-deep));color:#fff;display:grid;place-items:center;font-family:var(--font-display);font-weight:800;font-size:1.1rem}
+  .mod h3{font-size:1rem;margin-bottom:4px}
+  .mod p{font-size:.88rem;color:var(--muted)}
+  .mod .tag{display:inline-block;margin-top:8px;font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--sage-deep);background:var(--sage-soft);padding:3px 8px;border-radius:999px}
+
+  /* ---------- members ---------- */
+  .members{background:linear-gradient(180deg,#1E1A2A,#17141F);color:#F6EEE4}
+  .members .lead{color:#C9BDB3}
+  .devices{display:flex;flex-direction:column;align-items:center;gap:36px;margin:40px 0 44px}
+  .phone{background:#0D0D0D;border:2px solid rgba(255,255,255,.08);border-radius:40px;padding:10px;box-shadow:0 30px 60px rgba(0,0,0,.5)}
+  .phone .scr{width:240px;height:480px;border-radius:32px;overflow:hidden;position:relative}
+  .phone video{width:100%;height:100%;object-fit:cover}
+  .phone .notch{position:absolute;top:0;left:50%;transform:translateX(-50%);width:80px;height:20px;background:#0D0D0D;border-radius:0 0 16px 16px}
+  .laptop{display:none;width:100%;max-width:720px;background:#0D0D0D;border:2px solid rgba(255,255,255,.08);border-radius:18px;padding:10px;box-shadow:0 30px 60px rgba(0,0,0,.5)}
+  .laptop .scr{aspect-ratio:16/10;border-radius:12px;overflow:hidden}
+  .laptop video{width:100%;height:100%;object-fit:cover}
+  .laptop .dots{display:flex;gap:6px;padding:8px 6px 2px}
+  .laptop .dots i{width:8px;height:8px;border-radius:50%}
+  @media(min-width:1000px){.laptop{display:block}.devices{flex-direction:row;justify-content:center;gap:56px}}
+  .dev-label{display:flex;align-items:center;gap:8px;justify-content:center;font-size:.86rem;font-weight:700;margin-bottom:14px}
+  .feat{display:grid;grid-template-columns:1fr;gap:14px}
+  @media(min-width:640px){.feat{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1000px){.feat{grid-template-columns:repeat(4,1fr)}}
+  .feat div{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:var(--radius-sm);padding:22px;text-align:center;transition:transform .25s,background .25s}
+  .feat div:hover{transform:translateY(-4px);background:rgba(255,255,255,.07)}
+  .feat i{font-style:normal;display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:rgba(212,166,79,.14);margin:0 auto 10px;font-size:1.3rem}
+  .feat h3{font-size:.95rem;margin-bottom:4px}
+  .feat p{font-size:.82rem;color:#A79B92}
+
+  /* ---------- steps ---------- */
+  .steps{display:grid;gap:16px;counter-reset:s}
+  @media(min-width:800px){.steps{grid-template-columns:repeat(3,1fr)}}
+  .step{background:var(--paper);border:1px solid var(--sand);border-radius:var(--radius);padding:26px 24px;position:relative;overflow:hidden}
+  .step::before{counter-increment:s;content:"0" counter(s);position:absolute;right:14px;top:4px;font-family:var(--font-display);font-size:4rem;font-weight:800;color:var(--clay-soft);line-height:1}
+  .step i{font-style:normal;font-size:1.6rem;display:block;margin-bottom:10px}
+  .step h3{margin-bottom:6px}
+  .step p{font-size:.9rem;color:var(--muted)}
+
+  /* ---------- bonuses ---------- */
+  .bonus-list{display:grid;gap:16px}
+  .bonus{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;background:var(--paper);border:1px solid var(--sand);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+  .bonus::after{content:"";position:absolute;inset:0 auto 0 0;width:6px;background:linear-gradient(var(--gold),var(--clay))}
+  .bonus .ic{width:64px;height:64px;border-radius:18px;background:var(--gold-soft);display:grid;place-items:center;font-size:1.8rem}
+  .bonus .lbl{font-size:.68rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--clay)}
+  .bonus h3{font-size:1.1rem;margin:2px 0 6px}
+  .bonus p{font-size:.9rem;color:var(--muted)}
+  .bonus .val{position:absolute;right:16px;top:14px;font-size:.72rem;font-weight:700;color:var(--muted-2)}
+  .bonus .val s{color:var(--muted-2)}
+  .bonus .val b{color:var(--green);margin-left:6px}
+  @media(min-width:800px){.bonus{padding:26px 28px;grid-template-columns:auto 1fr}}
+
+  /* ---------- testimonials ---------- */
+  .tgrid{display:grid;gap:18px}
+  @media(min-width:640px){.tgrid{grid-template-columns:1fr 1fr}}
+  @media(min-width:1000px){.tgrid{grid-template-columns:repeat(4,1fr)}}
+  .tcard{background:var(--paper);border:1px solid var(--sand);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow);transition:transform .25s,box-shadow .25s}
+  .tcard:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+  .tcard .ph{position:relative;aspect-ratio:4/3}
+  .tcard .ph img{width:100%;height:100%;object-fit:cover}
+  .tcard .stars{position:absolute;top:10px;left:10px;background:rgba(255,255,255,.94);border-radius:999px;padding:4px 9px;font-size:.72rem;color:var(--gold);letter-spacing:.05em}
+  .tcard .pill{position:absolute;left:10px;bottom:10px;background:var(--clay);color:#fff;border-radius:999px;padding:5px 10px;font-size:.7rem;font-weight:800}
+  .tcard .body{padding:18px;display:flex;flex-direction:column;gap:10px;flex:1}
+  .tcard .who{display:flex;align-items:center;gap:10px}
+  .tcard .who i{font-style:normal;width:36px;height:36px;border-radius:50%;background:var(--clay);color:#fff;display:grid;place-items:center;font-weight:700;font-size:.85rem}
+  .tcard .who b{display:block;font-size:.9rem;line-height:1.2}
+  .tcard .who span{font-size:.74rem;color:var(--muted-2)}
+  .tcard q{font-size:.9rem;color:var(--ink-2);quotes:"“" "”"}
+
+  /* ---------- price ---------- */
+  .price{background:var(--cream);position:relative}
+  .price::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle,rgba(185,83,63,.16) 1px,transparent 1px);background-size:22px 22px;opacity:.6;pointer-events:none}
+  .pbox{position:relative;background:var(--paper);border-radius:28px;padding:30px 26px;box-shadow:var(--shadow-lg);border:1px solid var(--sand)}
+  .pbox::before{content:"";position:absolute;inset:-2px;border-radius:30px;padding:2px;background:linear-gradient(135deg,var(--gold),var(--clay),var(--gold));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+  .pbox .items{display:grid;gap:10px;margin-bottom:14px}
+  .pbox .it{display:flex;justify-content:space-between;gap:12px;font-size:.92rem;align-items:flex-start}
+  .pbox .it span:first-child{display:flex;gap:8px}
+  .pbox .it span:first-child::before{content:"✓";color:var(--green);font-weight:800}
+  .pbox .it s{color:var(--muted-2);font-size:.82rem;flex:0 0 auto}
+  .pbox .tot{display:flex;justify-content:space-between;align-items:center;margin-top:6px;color:var(--muted);font-weight:600;font-size:.92rem}
+  .pbox .tot s{font-weight:700}
+  .pbox .pay{display:flex;justify-content:space-between;align-items:baseline;margin:6px 0 0}
+  .pbox .pay span{font-weight:800;font-size:1.05rem}
+  .pbox .pay b{font-family:var(--font-display);font-size:2.9rem;color:var(--clay);line-height:1}
+  .pbox .pay b sup{font-size:1.2rem;vertical-align:top;margin-top:8px;display:inline-block}
+  .save{margin:12px 0 16px;background:linear-gradient(90deg,var(--gold-soft),#fff);border:1px solid var(--gold);border-radius:14px;padding:12px 14px;text-align:center;font-weight:700;font-size:.95rem}
+  .save b{color:var(--green)}
+  .timer{display:flex;align-items:center;justify-content:center;gap:10px;font-size:.8rem;color:var(--muted);margin-bottom:16px}
+  .timer b{font-variant-numeric:tabular-nums;background:var(--ink);color:#fff;padding:4px 10px;border-radius:8px;font-size:.95rem;letter-spacing:.06em}
+  .pbox .cta{max-width:none}
+  .pbox .trust{margin-top:14px}
+  .pbox .note{font-size:.78rem;color:var(--muted);text-align:center;margin-top:14px}
+
+  /* ---------- guarantee ---------- */
+  .guar{display:grid;gap:22px;align-items:center;background:var(--paper);border:1px solid var(--sand);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow)}
+  @media(min-width:800px){.guar{grid-template-columns:auto 1fr;padding:36px 40px}}
+  .seal{width:150px;height:150px;border-radius:50%;margin:0 auto;display:grid;place-items:center;text-align:center;background:conic-gradient(from 0deg,var(--gold),#F3D98C,var(--gold),#B88A2E,var(--gold));box-shadow:0 10px 30px rgba(212,166,79,.4);position:relative}
+  .seal::before{content:"";position:absolute;inset:8px;border-radius:50%;border:2px dashed rgba(42,33,29,.35)}
+  .seal div{font-family:var(--font-display);line-height:1;color:var(--ink)}
+  .seal div b{display:block;font-size:2.6rem;font-weight:800}
+  .seal div span{display:block;font-size:.62rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-family:var(--font-body)}
+  .guar h2{font-size:1.6rem}
+  .guar p{color:var(--ink-2);margin-top:10px;font-size:.96rem}
+  .guar ul{margin-top:12px;list-style:none;display:grid;gap:6px;font-size:.9rem;color:var(--muted)}
+  .guar li::before{content:"✓ ";color:var(--green);font-weight:800}
+
+  /* ---------- FAQ ---------- */
+  .faq{display:grid;gap:10px}
+  .q{background:var(--paper);border:1px solid var(--sand);border-radius:var(--radius-sm);overflow:hidden}
+  .q button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 18px;text-align:left;font-weight:700;font-size:.95rem}
+  .q button svg{flex:0 0 20px;transition:transform .3s;color:var(--clay)}
+  .q button[aria-expanded="true"] svg{transform:rotate(180deg)}
+  .q .a{padding:0 18px 16px;font-size:.92rem;color:var(--muted);display:none}
+  .q .a[data-open]{display:block;animation:fade .3s}
+  @keyframes fade{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+  /* ---------- final + footer ---------- */
+  .final{background:linear-gradient(180deg,var(--ivory),var(--cream))}
+  footer{background:var(--night);color:#A79B92;padding:40px 0;font-size:.8rem;text-align:center}
+  footer b{color:#F6EEE4;font-size:1rem}
+  footer nav{display:flex;gap:18px;justify-content:center;margin:14px 0}
+  footer nav a:hover{text-decoration:underline}
+
+
+  /* ---------- reveal ---------- */
+  .rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+  .rv.in{opacity:1;transform:none}
+  .rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+  @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.row,.cta{animation:none}}
+</style>
+
+<script>
+  (function(){
+    try{
+      var r=function(n){var m=document.cookie.match(new RegExp('(^| )'+n+'=([^;]+)'));return m?m[2]:null};
+      var w=function(n,v,d){document.cookie=n+'='+v+';path=/;max-age='+d*86400+';SameSite=Lax'};
+      if(!r('_fbp'))w('_fbp','fb.1.'+Date.now()+'.'+Math.floor(Math.random()*1e10),365);
+      var c=new URLSearchParams(location.search).get('fbclid');if(c)w('_fbc','fb.1.'+Date.now()+'.'+c,90);
+    }catch(e){}
+    if (window.CONFIG.pixel) {
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', window.CONFIG.pixel); fbq('track','PageView');
+      setTimeout(function(){ fbq('track','ViewContent',{content_name:'Crochet Jewelry Course',value:window.CONFIG.price,currency:'USD'}); },1500);
+    }
+  })();
+</script>
+</head>
+<body>
+
+<!-- ===== TOP BAR ===== -->
+<div class="topbar">♡ TODAY ONLY, <b id="js-date">October 15</b> · price goes up in <span class="t js-timer">15:00</span></div>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-media">
+      <img src="img/cf753642f_ChatGPTImage22desetde202619_54_49.webp" alt="Handmade crochet jewelry set in a gift box" width="1800" height="844" fetchpriority="high">
+      <div class="float a"><strong>$6 → $120</strong>materials → selling price</div>
+      <div class="float b"><strong>~1 hour</strong>per finished piece</div>
+    </div>
+    <div class="hero-copy">
+      <span class="eyebrow soft">💰 A real crochet business, from home</span>
+      <h1 style="margin-top:18px">Turn <span class="accent">$6 of yarn</span> into pieces that sell for <span class="accent">$40 to $120</span></h1>
+      <p class="sub">Learn from scratch how to make and sell crochet earrings, necklaces, bracelets and rings — high-margin pieces that cost almost nothing in materials and sell for a premium. Step-by-step video lessons, printable PDF charts and a pricing calculator that tells you exactly what to charge. <b>Your very first sale pays for the course.</b></p>
+      <div class="chips">
+        <span class="chip">💸 Up to 20x margin</span>
+        <span class="chip">💎 40+ designs</span>
+        <span class="chip">🎬 Video lessons</span>
+        <span class="chip">📋 PDF charts</span>
+        <span class="chip">♾️ Lifetime access</span>
+      </div>
+      <div class="cta-wrap">
+        <div class="trust">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg>Secure checkout</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h8l-1 8 10-12h-8z"/></svg>Instant access</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 11-3-6.7"/><path d="M21 3v6h-6"/></svg>30-day money-back guarantee</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROOF STRIP ===== -->
+<div class="strip">
+  <div class="wrap">
+    <div><b>40+</b><span>exclusive designs</span></div>
+    <div><b>$40–$120</b><span>selling price per piece</span></div>
+    <div><b>~1 hr</b><span>to finish a piece</span></div>
+    <div><b>$27</b><span>one-time · lifetime access</span></div>
+  </div>
+</div>
+
+<!-- ===== GALLERY ===== -->
+<section class="gallery">
+  <div class="wrap section-head rv">
+    <span class="eyebrow night">✦ The collection</span>
+    <h2>Be the first in your area to make <span class="gold">pieces like these</span></h2>
+    <p class="lead">Earrings, necklaces, chokers, bracelets, anklets, rings and brooches — 40+ exclusive designs that every woman wants to wear, and that nobody else at your local market is selling.</p>
+  </div>
+  <div class="gallery-rows">
+    <div class="fade-l"></div><div class="fade-r"></div>
+    <div class="row r1">
+      <div class="tile"><img src="img/b7483e63c_generated_image.webp" alt="Pearl Collection" loading="lazy"><i>BESTSELLER</i><span>Pearl Collection</span></div>
+      <div class="tile"><img src="img/24183395f_generated_image.webp" alt="Floral Necklace" loading="lazy"><span>Floral Necklace</span></div>
+      <div class="tile"><img src="img/e9c8b196d_generated_image.webp" alt="Rosé Earrings" loading="lazy"><i>MOST REQUESTED</i><span>Rosé Earrings</span></div>
+      <div class="tile"><img src="img/38301a9e5_generated_image.webp" alt="Gold Bracelet" loading="lazy"><span>Gold Bracelet</span></div>
+      <div class="tile"><img src="img/1d4e7e5c5_generated_image.webp" alt="Flower Ring" loading="lazy"><span>Flower Ring</span></div>
+      <div class="tile"><img src="img/f07eb82ab_generated_image.webp" alt="Choker" loading="lazy"><span>Lace Choker</span></div>
+      <div class="tile"><img src="img/8ade100eb_generated_image.webp" alt="Rosé Brooch" loading="lazy"><span>Rosé Brooch</span></div>
+      <div class="tile"><img src="img/ad338f1db_generated_image.webp" alt="Anklet" loading="lazy"><span>Beaded Anklet</span></div>
+      <div class="tile"><img src="img/b7483e63c_generated_image.webp" alt="" loading="lazy"><i>BESTSELLER</i><span>Pearl Collection</span></div>
+      <div class="tile"><img src="img/24183395f_generated_image.webp" alt="" loading="lazy"><span>Floral Necklace</span></div>
+      <div class="tile"><img src="img/e9c8b196d_generated_image.webp" alt="" loading="lazy"><i>MOST REQUESTED</i><span>Rosé Earrings</span></div>
+      <div class="tile"><img src="img/38301a9e5_generated_image.webp" alt="" loading="lazy"><span>Gold Bracelet</span></div>
+      <div class="tile"><img src="img/1d4e7e5c5_generated_image.webp" alt="" loading="lazy"><span>Flower Ring</span></div>
+      <div class="tile"><img src="img/f07eb82ab_generated_image.webp" alt="" loading="lazy"><span>Lace Choker</span></div>
+      <div class="tile"><img src="img/8ade100eb_generated_image.webp" alt="" loading="lazy"><span>Rosé Brooch</span></div>
+      <div class="tile"><img src="img/ad338f1db_generated_image.webp" alt="" loading="lazy"><span>Beaded Anklet</span></div>
+    </div>
+    <div class="row r2">
+      <div class="tile"><img src="img/1d4e7e5c5_generated_image.webp" alt="" loading="lazy"><span>Flower Ring</span></div>
+      <div class="tile"><img src="img/f07eb82ab_generated_image.webp" alt="" loading="lazy"><span>Lace Choker</span></div>
+      <div class="tile"><img src="img/8ade100eb_generated_image.webp" alt="" loading="lazy"><span>Rosé Brooch</span></div>
+      <div class="tile"><img src="img/ad338f1db_generated_image.webp" alt="" loading="lazy"><span>Beaded Anklet</span></div>
+      <div class="tile"><img src="img/b7483e63c_generated_image.webp" alt="" loading="lazy"><span>Pearl Collection</span></div>
+      <div class="tile"><img src="img/24183395f_generated_image.webp" alt="" loading="lazy"><span>Floral Necklace</span></div>
+      <div class="tile"><img src="img/e9c8b196d_generated_image.webp" alt="" loading="lazy"><span>Rosé Earrings</span></div>
+      <div class="tile"><img src="img/38301a9e5_generated_image.webp" alt="" loading="lazy"><span>Gold Bracelet</span></div>
+      <div class="tile"><img src="img/1d4e7e5c5_generated_image.webp" alt="" loading="lazy"><span>Flower Ring</span></div>
+      <div class="tile"><img src="img/f07eb82ab_generated_image.webp" alt="" loading="lazy"><span>Lace Choker</span></div>
+      <div class="tile"><img src="img/8ade100eb_generated_image.webp" alt="" loading="lazy"><span>Rosé Brooch</span></div>
+      <div class="tile"><img src="img/ad338f1db_generated_image.webp" alt="" loading="lazy"><span>Beaded Anklet</span></div>
+      <div class="tile"><img src="img/b7483e63c_generated_image.webp" alt="" loading="lazy"><span>Pearl Collection</span></div>
+      <div class="tile"><img src="img/24183395f_generated_image.webp" alt="" loading="lazy"><span>Floral Necklace</span></div>
+      <div class="tile"><img src="img/e9c8b196d_generated_image.webp" alt="" loading="lazy"><span>Rosé Earrings</span></div>
+      <div class="tile"><img src="img/38301a9e5_generated_image.webp" alt="" loading="lazy"><span>Gold Bracelet</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== THIS IS FOR YOU IF ===== -->
+<section>
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="eyebrow">Is this for you?</span>
+      <h2>This course is for you if…</h2>
+      <p class="lead">You don’t need to be an expert. You need a hook, a little yarn and a Sunday afternoon.</p>
+    </div>
+    <div class="foryou-grid">
+      <div class="foryou rv"><div class="n">1</div><p><b>You already crochet (or want to learn)</b> and you’re tired of making beautiful things that just sit in a drawer or get given away for free.</p></div>
+      <div class="foryou rv d1"><div class="n">2</div><p><b>You want extra income from home</b> — a few hundred dollars a month that fits around kids, a job or retirement, without inventory or shipping headaches.</p></div>
+      <div class="foryou rv"><div class="n">3</div><p><b>You’ve tried selling before</b> and people said “that’s so cute!” but nobody bought — because you were pricing by guesswork.</p></div>
+      <div class="foryou rv d1"><div class="n">4</div><p><b>You want something unique to sell</b> at craft fairs, on Etsy, on Instagram or to friends — not another generic amigurumi or dishcloth everyone already makes.</p></div>
+      <div class="foryou rv"><div class="n">5</div><p><b>You’re done with expensive in-person workshops</b> that cost $80 per class and teach one pattern. You want the whole system, at your own pace, for less than a ball of fancy yarn.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BEFORE / AFTER ===== -->
+<section class="ba">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="eyebrow">Sound familiar?</span>
+      <h2>Stop making beautiful pieces <span class="accent">that don’t sell at the right price</span></h2>
+    </div>
+    <div class="cols">
+      <div class="col bad rv">
+        <h3><i>✕</i>Without the course</h3>
+        <ul>
+          <li><i>✕</i>Making beautiful pieces without knowing what to charge — and nobody buys</li>
+          <li><i>✕</i>Reselling ready-made products at low margins that don’t pay for your time</li>
+          <li><i>✕</i>Spending a fortune on in-person classes that don’t fit your routine</li>
+          <li><i>✕</i>Thinking crochet jewelry is too hard to learn on your own</li>
+          <li><i>✕</i>Guessing which designs people actually want to buy</li>
+        </ul>
+      </div>
+      <div class="col good rv d1">
+        <h3><i>✓</i>With the Jewelry Course</h3>
+        <ul>
+          <li><i>✓</i>A price table and the best-selling designs — you profit from your very first piece</li>
+          <li><i>✓</i>High-margin pieces: little material, high selling price</li>
+          <li><i>✓</i>Step by step from beginner to advanced — at your own pace, at home</li>
+          <li><i>✓</i>Short video lessons and clear PDF charts, easy to follow</li>
+          <li><i>✓</i>A calculator that tells you exactly what to charge, every time</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROFIT MATH ===== -->
+<section>
+  <div class="narrow">
+    <div class="section-head rv">
+      <span class="eyebrow">The profit math</span>
+      <h2>Why a piece that costs <span class="accent">$6</span> sells for <span class="accent">$40 to $120</span></h2>
+      <p class="lead">Crochet jewelry is handcraft with high perceived value. The customer pays for exclusivity and finish — not for the yarn you used. That’s what creates the margin.</p>
+    </div>
+    <div class="receipt rv">
+      <div class="line"><span>Materials (yarn, beads, hook, findings)</span><b>$4 – $8</b></div>
+      <div class="line"><span>Time to make</span><b>~1 hour</b></div>
+      <div class="line"><span>Suggested selling price</span><b class="accent">$40 – $120</b></div>
+      <div class="stitch"></div>
+      <div class="line total"><span style="color:var(--ink);font-weight:800">Profit per piece</span><b>$<span class="count" data-to="32">0</span> – $<span class="count" data-to="116">0</span></b></div>
+      <p class="fine" style="margin-top:12px">1 piece a week already pays for the course. 5 pieces a week become real extra income.</p>
+    </div>
+    <div class="stats rv d1">
+      <div class="stat"><b>Up to 20x</b><span>margin over materials</span></div>
+      <div class="stat"><b>~1h</b><span>to finish one piece</span></div>
+      <div class="stat"><b>1st sale</b><span>pays for the whole course</span></div>
+    </div>
+    <div class="why">
+      <div class="rv"><i>🧶</i><h3>Materials are cheap and everywhere</h3><p>Cotton thread, seed beads and a 1.5 mm hook. You’ll find everything at any craft store or online for a few dollars — we give you the exact list.</p></div>
+      <div class="rv d1"><i>💎</i><h3>People pay for “handmade + unique”</h3><p>Nobody can buy these at the mall. A one-of-a-kind floral necklace is a gift, not a commodity — and gifts are priced by feeling, not by yarn.</p></div>
+      <div class="rv d2"><i>📦</i><h3>Tiny, light and easy to ship</h3><p>No bulky inventory. A pair of earrings fits in a padded envelope and costs cents to mail — perfect for Etsy, Instagram and craft fairs.</p></div>
+    </div>
+    <p class="fine">Realistic margin example. Results depend on your pricing, finish and sales effort — this is not a guarantee of earnings.</p>
+  </div>
+</section>
+
+<!-- ===== WHAT'S INSIDE ===== -->
+<section style="background:var(--cream)">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="eyebrow">What’s inside</span>
+      <h2>From your first stitch to your first <span class="accent">paying customer</span></h2>
+      <p class="lead">Short, focused video lessons you can follow on your phone while you crochet, plus a printable PDF chart for every single design.</p>
+    </div>
+    <div class="modules">
+      <div class="mod rv"><div class="k">01</div><div><h3>Foundations &amp; Materials</h3><p>The 5 stitches you’ll use in every piece, how to hold fine thread, tension, and the exact yarn, beads, hooks and findings to buy.</p><span class="tag">Start here</span></div></div>
+      <div class="mod rv d1"><div class="k">02</div><div><h3>Earrings</h3><p>Flower drops, hoops, studs and the Rosé Earrings — the fastest pieces to make and the easiest to sell.</p><span class="tag">10+ designs</span></div></div>
+      <div class="mod rv"><div class="k">03</div><div><h3>Necklaces &amp; Chokers</h3><p>The Floral Necklace, lace chokers and pearl statement pieces. Highest ticket in the collection.</p><span class="tag">Premium pieces</span></div></div>
+      <div class="mod rv d1"><div class="k">04</div><div><h3>Bracelets, Anklets &amp; Rings</h3><p>Beaded bracelets, boho anklets and dainty flower rings — the add-ons that turn one sale into a set.</p><span class="tag">Upsell pieces</span></div></div>
+      <div class="mod rv"><div class="k">05</div><div><h3>Finishing &amp; Hardware</h3><p>Clasps, ear hooks, jump rings, stiffening and a professional finish that makes the piece look store-bought — in a good way.</p><span class="tag">The secret to the price</span></div></div>
+      <div class="mod rv d1"><div class="k">06</div><div><h3>Pricing &amp; Selling</h3><p>How to price with the calculator, photograph pieces with your phone, and where to sell: Etsy, Instagram, craft fairs and local boutiques.</p><span class="tag">Turn it into income</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MEMBERS AREA ===== -->
+<section class="members">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="eyebrow night">✦ How you get it</span>
+      <h2>Take a look at your <span class="gold">members area</span></h2>
+      <p class="lead">A Netflix-style platform built so you can learn at your own pace — watch the lessons, download the charts and create your jewelry whenever and wherever you want.</p>
+    </div>
+    <div class="devices">
+      <div class="rv">
+        <div class="dev-label">📱 On your phone</div>
+        <div class="phone"><div class="scr"><video src="img/b636f5b64_GifMobile-Croche.mp4" poster="img/b636f5b64_GifMobile-Croche.mp4.poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Members area preview on mobile"></video><div class="notch"></div></div></div>
+      </div>
+      <div class="laptop rv d1">
+        <div class="scr"><video src="img/7110cd939_Gifdesktop.mp4" poster="img/7110cd939_Gifdesktop.mp4.poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Members area preview on desktop"></video></div>
+        <div class="dots"><i style="background:#FF5F57"></i><i style="background:#FEBC2E"></i><i style="background:#28C840"></i></div>
+      </div>
+    </div>
+    <div class="feat">
+      <div class="rv"><i>✅</i><h3>Instant access</h3><p>Right after your purchase you get access instantly — no waiting.</p></div>
+      <div class="rv d1"><i>📱</i><h3>Access from anywhere</h3><p>Phone, tablet or computer. Your course is always available.</p></div>
+      <div class="rv d2"><i>🎬</i><h3>Video lessons</h3><p>Detailed step by step you can watch as many times as you want.</p></div>
+      <div class="rv d3"><i>📥</i><h3>PDF charts</h3><p>Download all the charts and patterns in one click.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section>
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="eyebrow">How it works</span>
+      <h2>Three steps to your <span class="accent">first sale</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step rv"><i>🛒</i><h3>Get instant access</h3><p>Pay once, get your login by email in minutes. Open the members area on your phone or computer.</p></div>
+      <div class="step rv d1"><i>🧶</i><h3>Make your first piece tonight</h3><p>Start with the Rosé Earrings: one short lesson, one PDF chart, about an hour of crochet. Done.</p></div>
+      <div class="step rv d2"><i>💵</i><h3>Price it and sell it</h3><p>Drop your numbers in the calculator, post a photo on your stories or Etsy, and let the orders come in.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EVERYTHING YOU GET + BONUSES ===== -->
+<section style="background:var(--cream)">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="eyebrow">Everything you get</span>
+      <h2>The complete course <span class="accent">+ 3 bonuses</span></h2>
+      <p class="lead">Everything you need to make and sell at a profit — nothing you don’t.</p>
+    </div>
+    <div class="bonus-list">
+      <div class="bonus rv"><div class="ic">🎬</div><div><div class="lbl">Main course</div><h3>Step-by-Step Video Lessons — 40+ designs</h3><p>Every piece explained from the first to the last stitch, no skipped steps. Filmed close-up so you can see every loop.</p></div><div class="val"><s>$97</s></div></div>
+      <div class="bonus rv"><div class="ic">📋</div><div><div class="lbl">Included</div><h3>Complete PDF Charts for every design</h3><p>Download, print or follow along on your phone while you crochet. Clear symbols, stitch counts and finishing notes.</p></div><div class="val"><s>$37</s></div></div>
+      <div class="bonus rv"><div class="ic">💰</div><div><div class="lbl">Bonus #1 · Featured</div><h3>Price &amp; Profit Calculator</h3><p>Type in your materials and time — it tells you exactly what to charge and how much ends up in your pocket on every piece. Profit from your very first sale.</p></div><div class="val"><s>$19</s><b>FREE</b></div></div>
+      <div class="bonus rv"><div class="ic">🧶</div><div><div class="lbl">Bonus #2</div><h3>Materials &amp; Suppliers List</h3><p>Exactly which threads, beads, hooks and findings to buy — and where to get them cheap online or at your local craft store.</p></div><div class="val"><s>$27</s><b>FREE</b></div></div>
+      <div class="bonus rv"><div class="ic">🎁</div><div><div class="lbl">Bonus #3</div><h3>New Designs for Life</h3><p>Lifetime access, no monthly fee. Every time we add a new design to the collection, it’s yours at no extra cost.</p></div><div class="val"><s>$37</s><b>FREE</b></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS =====
+     ⚠️ PLACEHOLDER: fotos y citas vienen de la landing original (generadas por IA).
+     Reemplazar por testimonios reales con permiso antes de lanzar. -->
+<section>
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="eyebrow soft">💬 From our students</span>
+      <h2>From hobby to income: <span class="accent">real stories</span></h2>
+      <p class="lead">See how our students turned crochet into income — pieces that sell out and orders that flood their inbox.</p>
+    </div>
+    <div class="tgrid">
+      <div class="tcard rv"><div class="ph"><img src="img/b179aea07_generated_image.webp" alt="Floral necklace made by a student" loading="lazy"><span class="stars">★★★★★</span><span class="pill">💸 10x more orders</span></div><div class="body"><div class="who"><i>M</i><div><b>Mary Ellen</b><span>Course student</span></div></div><q>I just finished another necklace from the course. I’m completely in love with the pieces, each one is prettier than the last. After I bought the course my orders went up about 10 times, I can’t keep up with so many requests.</q></div></div>
+      <div class="tcard rv d1"><div class="ph"><img src="img/a86a1c97e_generated_image.webp" alt="Rosé earrings made by a student" loading="lazy"><span class="stars">★★★★★</span><span class="pill">💸 Most-requested piece</span></div><div class="body"><div class="who"><i>M</i><div><b>Marissa</b><span>Course student</span></div></div><q>I was desperate to find the pattern for this earring and the only course I found was yours. I’m getting lots of orders for this piece, which by the way is the most requested one in my catalog. I’m really enjoying the course.</q></div></div>
+      <div class="tcard rv d2"><div class="ph"><img src="img/d38f20dee_generated_image.webp" alt="Beaded bracelets made by a student" loading="lazy"><span class="stars">★★★★★</span><span class="pill">💸 Non-stop orders</span></div><div class="body"><div class="who"><i>S</i><div><b>Sabrina</b><span>Course student</span></div></div><q>Feeling so fulfilled with the course. I finished these bracelets and the orders haven’t stopped since I made a few pieces from the course and posted them on my stories. This was the best investment I’ve ever made.</q></div></div>
+      <div class="tcard rv d3"><div class="ph"><img src="img/94453f250_generated_image.webp" alt="Lace choker made by a student" loading="lazy"><span class="stars">★★★★★</span><span class="pill">💸 12 orders on 1st piece</span></div><div class="body"><div class="who"><i>C</i><div><b>Christine</b><span>Course student</span></div></div><q>The first choker I ever made. I posted it on my stories and I already have 12 orders for this piece. I want to thank all the girls from the course, because every piece is prettier than the last.</q></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRICING ===== -->
+<section class="price" id="pricing">
+  <div class="narrow" style="max-width:560px">
+    <div class="section-head rv">
+      <span class="eyebrow">⏰ Limited-time offer</span>
+      <h2>Start earning <span class="accent">this week</span></h2>
+      <p class="lead">Here’s everything you get today:</p>
+    </div>
+    <div class="pbox rv">
+      <div class="items">
+        <div class="it"><span>Step-by-step video lessons (40+ designs)</span><s>$97</s></div>
+        <div class="it"><span>Complete PDF charts for every design</span><s>$37</s></div>
+        <div class="it"><span>Bonus #1 · Price &amp; Profit Calculator</span><s>$19</s></div>
+        <div class="it"><span>Bonus #2 · Materials &amp; Suppliers List</span><s>$27</s></div>
+        <div class="it"><span>Bonus #3 · New Designs for Life</span><s>$37</s></div>
+      </div>
+      <div class="stitch"></div>
+      <div class="tot"><span>Total value</span><s>$217</s></div>
+      <div class="pay"><span>Today you pay</span><b><sup>$</sup>27</b></div>
+      <div class="save">🎉 You save <b>$190</b> today · one-time payment, no subscription</div>
+      <div class="timer">This price expires in <b class="js-timer">15:00</b></div>
+      <a href="#pricing" class="cta" data-cta><span>Get instant access <small>Secure checkout · 30-day guarantee</small></span><span class="arrow">→</span></a>
+      <div class="trust">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg>Secure payment</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h8l-1 8 10-12h-8z"/></svg>Instant access</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 11-3-6.7"/><path d="M21 3v6h-6"/></svg>30-day guarantee</span>
+      </div>
+      <p class="note">🛡️ Try it for 30 days. Not happy? Email us and we refund every cent — no questions asked.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GUARANTEE ===== -->
+<section>
+  <div class="narrow">
+    <div class="guar rv">
+      <div class="seal"><div><b>30</b><span>Day money-back<br>guarantee</span></div></div>
+      <div>
+        <h2>Make your first piece. If you don’t love it, it’s free.</h2>
+        <p>Go through the lessons, download the charts, make a pair of earrings. If within 30 days you feel this course wasn’t worth every dollar, just send us one email and we refund 100% of your money. You even keep the PDF charts.</p>
+        <ul>
+          <li>No forms, no phone calls, no “are you sure?”</li>
+          <li>Refund processed within 5 business days</li>
+          <li>You take zero risk — we take all of it</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section style="background:var(--cream)">
+  <div class="narrow">
+    <div class="section-head rv">
+      <span class="eyebrow">Questions?</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq rv">
+      <div class="q"><button aria-expanded="false"><span>How much can I earn per piece?</span><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button><div class="a">Crochet jewelry has a high margin: with just a few dollars in materials (affordable thread, beads and hooks), each piece can sell for $40 to $120 — depending on the design and the finish. This is a realistic margin example, not a guarantee of earnings. The Price &amp; Profit Calculator shows you exactly what to charge and how much ends up in your pocket.</div></div>
+      <div class="q"><button aria-expanded="false"><span>I’ve never crocheted. Can I really learn?</span><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button><div class="a">Yes. Module 1 starts from zero: how to hold the hook, the 5 stitches you’ll use in every piece, and tension with fine thread. You progress until you can make complete jewelry pieces, even with no experience at all.</div></div>
+      <div class="q"><button aria-expanded="false"><span>How long until I finish my first piece?</span><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button><div class="a">Most students make their first pair of earrings the same evening they join. Once you know the stitches, a typical piece takes about an hour.</div></div>
+      <div class="q"><button aria-expanded="false"><span>Can I sell the pieces I make?</span><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button><div class="a">Absolutely — that’s the whole point. You can sell everything you make from these designs on Etsy, Instagram, at craft fairs or to local boutiques. The only thing you can’t do is resell the course materials themselves.</div></div>
+      <div class="q"><button aria-expanded="false"><span>Do I need expensive materials?</span><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button><div class="a">No. The thread, beads, hooks and findings are affordable and easy to find in any craft store or online. You get a complete materials list with suggestions on where to buy them at a good price.</div></div>
+      <div class="q"><button aria-expanded="false"><span>How do I get access?</span><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button><div class="a">Immediately after payment confirmation you receive your login by email. Open the members area on your phone or computer and start watching — nothing to install, nothing to ship.</div></div>
+      <div class="q"><button aria-expanded="false"><span>Is this a physical kit?</span><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button><div class="a">No. This is a 100% digital course: video lessons, PDF charts and the calculator, all inside your members area. You buy your own thread and beads with the list we give you.</div></div>
+      <div class="q"><button aria-expanded="false"><span>Is the access lifetime?</span><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button><div class="a">Yes. You pay once and have access forever, including any new designs added later. No monthly fee, ever.</div></div>
+      <div class="q"><button aria-expanded="false"><span>What if I don’t like it?</span><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button><div class="a">You have a 30-day unconditional money-back guarantee. If you don’t like it for any reason, email us and we refund 100% of your money. No questions asked.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="final">
+  <div class="narrow center">
+    <div class="rv">
+      <span class="eyebrow soft">🛡️ 30-day guarantee · zero risk</span>
+      <h2 style="margin-top:16px">Your first piece could be <span class="accent">finished tonight</span></h2>
+      <p class="lead">40+ designs, video lessons, PDF charts, the calculator and lifetime access. One payment of $27 — you save $190 today.</p>
+    </div>
+    <div class="cta-wrap rv d1" style="margin-top:28px">
+      <a href="#pricing" class="cta" data-cta><span>Start for $27 now <small>Instant access · one-time payment</small></span><span class="arrow">→</span></a>
+      <div class="trust"><span>🔒 Secure checkout</span><span>⚡ Instant access</span><span>🔁 30-day guarantee</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>💎 <b>Crochet Jewelry Course</b></div>
+    <p style="margin-top:8px">100% digital product. Instant access after payment confirmation.</p>
+    <nav><a href="#">Privacy Policy</a><a href="#">Terms of Use</a><a href="#" data-support>Support</a></nav>
+    <p>© 2026 Crochet Jewelry Course. All rights reserved.</p>
+    <p style="font-size:.7rem;margin-top:10px;color:#6E635B">This site is not part of Facebook or Meta Platforms, Inc. Results vary and depend on your effort, pricing and sales — no income is guaranteed.</p>
+  </div>
+</footer>
+
+  <a href="#pricing" class="cta" data-cta>Get instant access →</a>
+</div>
+
+<script>
+(function(){
+  var C = window.CONFIG || {};
+  // Fecha dinámica
+  var d = document.getElementById('js-date');
+  if (d) d.textContent = new Date().toLocaleDateString('en-US',{month:'long',day:'numeric'});
+
+  // CTAs
+  var ctas = document.querySelectorAll('[data-cta]');
+  ctas.forEach(function(a){
+    if (C.checkout) a.setAttribute('href', C.checkout);
+    a.addEventListener('click', function(){ if (window.fbq) fbq('track','AddToCart',{content_name:'Crochet Jewelry Course',value:C.price,currency:'USD'}); });
+  });
+  var s = document.querySelector('[data-support]'); if (s && C.support) s.setAttribute('href','mailto:'+C.support);
+
+  // Contador (persiste en la sesión; al llegar a 0 queda en 00:00)
+  var KEY='cj_deadline', end;
+  try { end = +sessionStorage.getItem(KEY); } catch(e){}
+  if (!end || end < Date.now()) { end = Date.now() + (C.timerMinutes||15)*60000; try{ sessionStorage.setItem(KEY,end);}catch(e){} }
+  var tEls = document.querySelectorAll('.js-timer');
+  function tick(){ var r=Math.max(0,end-Date.now()); var m=Math.floor(r/60000), sec=Math.floor(r%60000/1000);
+    var txt=(m<10?'0':'')+m+':'+(sec<10?'0':'')+sec; tEls.forEach(function(e){e.textContent=txt}); if(r>0) setTimeout(tick,1000); }
+  tick();
+
+  // FAQ
+  document.querySelectorAll('.q button').forEach(function(b){
+    b.addEventListener('click', function(){
+      var open = b.getAttribute('aria-expanded')==='true';
+      document.querySelectorAll('.q button').forEach(function(o){ o.setAttribute('aria-expanded','false'); o.nextElementSibling.removeAttribute('data-open'); });
+      if (!open){ b.setAttribute('aria-expanded','true'); b.nextElementSibling.setAttribute('data-open',''); }
+    });
+  });
+
+  // Reveal + contadores
+  var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);
+    e.target.querySelectorAll('.count').forEach(function(c){ var to=+c.dataset.to, t0=performance.now();
+      (function step(t){ var p=Math.min(1,(t-t0)/1200); c.textContent=Math.round(to*(1-Math.pow(1-p,3))); if(p<1) requestAnimationFrame(step); })(t0); });
+  } }); }, {threshold:.15});
+  document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+
+})();
+</script>
+</body>
+</html>
